@@ -38,6 +38,9 @@ export default function Hero() {
               <a href="#about" className="transition hover:opacity-60">About</a>
             </li>
             <li>
+              <a href="#skills" className="transition hover:opacity-60">Skills</a>
+            </li>
+            <li>
               <a href="#projects" className="transition hover:opacity-60">Projects</a>
             </li>
             <li>
