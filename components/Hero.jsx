@@ -29,48 +29,46 @@ export default function Hero() {
       </span>
 
       <div className="relative z-30 px-4 pt-4 md:px-8 md:pt-6">
-        <nav className="mx-auto flex max-w-6xl items-center justify-between rounded-full bg-[#ffc896] px-5 py-3 shadow-lg md:px-7 md:py-4">
-          <div className="text-lg font-extrabold tracking-tight text-neutral-900 md:text-xl">
-            ATUL HOODA<sup className="ml-0.5 text-[9px] font-medium">®</sup>
+        <nav className="mx-auto flex max-w-6xl items-center rounded-full bg-[#ffc896] px-5 py-2.5 shadow-[0_8px_30px_rgb(0,0,0,0.12)] md:px-7 md:py-3">
+          <div className="flex flex-1 items-center">
+            <div className="text-lg font-extrabold tracking-tight text-neutral-900 md:text-xl">
+              ATUL HOODA<sup className="ml-0.5 text-[9px] font-medium">®</sup>
+            </div>
           </div>
-          <ul className="hidden items-center gap-2 text-sm font-medium text-neutral-900 md:flex">
-            <li>
-              <a
-                href="#about"
-                className="rounded-full px-4 py-2 transition-colors duration-200 hover:bg-neutral-900 hover:text-[#ffc896]"
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                href="#skills"
-                className="rounded-full px-4 py-2 transition-colors duration-200 hover:bg-neutral-900 hover:text-[#ffc896]"
-              >
-                Skills
-              </a>
-            </li>
-            <li>
-              <a
-                href="#projects"
-                className="rounded-full px-4 py-2 transition-colors duration-200 hover:bg-neutral-900 hover:text-[#ffc896]"
-              >
-                Projects
-              </a>
-            </li>
-            <li>
-              <a
-                href="#contact"
-                className="rounded-full px-4 py-2 transition-colors duration-200 hover:bg-neutral-900 hover:text-[#ffc896]"
-              >
-                Contact
-              </a>
-            </li>
+
+          <ul className="hidden flex-none items-center gap-1 text-[15px] font-semibold text-neutral-900 md:flex">
+            {[
+              { href: "#about", label: "About" },
+              { href: "#skills", label: "Skills" },
+              { href: "#projects", label: "Projects" },
+              { href: "#contact", label: "Contact" },
+            ].map((link) => (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  className="group relative inline-flex items-center gap-2 rounded-full px-5 py-2.5 transition-colors duration-200 hover:bg-neutral-900 hover:text-[#ffc896]"
+                >
+                  <span
+                    aria-hidden="true"
+                    className="h-1.5 w-1.5 scale-0 rounded-full bg-neutral-900 transition-all duration-200 group-hover:scale-100 group-hover:bg-[#ffc896]"
+                  />
+                  <span>{link.label}</span>
+                </a>
+              </li>
+            ))}
           </ul>
-          <button aria-label="Menu" className="flex flex-col gap-[6px]">
-            <span className="block h-0.5 w-6 bg-neutral-900" />
-            <span className="block h-0.5 w-6 bg-neutral-900" />
-          </button>
+
+          <div className="flex flex-1 items-center justify-end">
+            <button
+              aria-label="Menu"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-neutral-900 text-[#ffc896] transition-transform duration-200 hover:scale-105"
+            >
+              <span className="flex flex-col gap-[5px]">
+                <span className="block h-0.5 w-5 bg-current" />
+                <span className="block h-0.5 w-5 bg-current" />
+              </span>
+            </button>
+          </div>
         </nav>
       </div>
 
