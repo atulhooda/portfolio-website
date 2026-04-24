@@ -33,7 +33,7 @@ export default function Hero() {
 
       <div className="pointer-events-none absolute inset-x-0 bottom-0 top-16 z-10 flex items-end justify-center">
         <Image
-          src="/atul.png"
+          src="/pfpp.png"
           alt="Atul"
           width={1400}
           height={1400}
