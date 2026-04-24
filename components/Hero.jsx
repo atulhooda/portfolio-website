@@ -28,26 +28,28 @@ export default function Hero() {
         ATUL
       </span>
 
-      <nav className="relative z-30 flex items-center justify-between px-6 py-6 text-white md:px-12 md:py-8">
-        <div className="text-2xl font-extrabold tracking-tight">
-          ATUL HOODA<sup className="ml-0.5 text-[10px] font-medium">®</sup>
-        </div>
-        <ul className="hidden items-center gap-20 text-xs tracking-[0.3em] md:flex">
-          <li>
-            <a href="#about" className="transition hover:opacity-70">ABOUT</a>
-          </li>
-          <li>
-            <a href="#projects" className="transition hover:opacity-70">PROJECTS</a>
-          </li>
-          <li>
-            <a href="#contact" className="transition hover:opacity-70">CONTACT</a>
-          </li>
-        </ul>
-        <button aria-label="Menu" className="flex flex-col gap-[6px]">
-          <span className="block h-px w-7 bg-white" />
-          <span className="block h-px w-7 bg-white" />
-        </button>
-      </nav>
+      <div className="relative z-30 px-4 pt-4 md:px-8 md:pt-6">
+        <nav className="mx-auto flex max-w-6xl items-center justify-between rounded-full bg-white px-5 py-3 shadow-lg md:px-7 md:py-4">
+          <div className="text-lg font-extrabold tracking-tight text-neutral-900 md:text-xl">
+            ATUL HOODA<sup className="ml-0.5 text-[9px] font-medium">®</sup>
+          </div>
+          <ul className="hidden items-center gap-10 text-sm font-medium text-neutral-900 md:flex">
+            <li>
+              <a href="#about" className="transition hover:opacity-60">About</a>
+            </li>
+            <li>
+              <a href="#projects" className="transition hover:opacity-60">Projects</a>
+            </li>
+            <li>
+              <a href="#contact" className="transition hover:opacity-60">Contact</a>
+            </li>
+          </ul>
+          <button aria-label="Menu" className="flex flex-col gap-[6px]">
+            <span className="block h-0.5 w-6 bg-neutral-900" />
+            <span className="block h-0.5 w-6 bg-neutral-900" />
+          </button>
+        </nav>
+      </div>
 
       <div className="pointer-events-none absolute inset-x-0 bottom-0 top-24 z-[25] flex items-end justify-center">
         <Image
