@@ -33,18 +33,38 @@ export default function Hero() {
           <div className="text-lg font-extrabold tracking-tight text-neutral-900 md:text-xl">
             ATUL HOODA<sup className="ml-0.5 text-[9px] font-medium">®</sup>
           </div>
-          <ul className="hidden items-center gap-10 text-sm font-medium text-neutral-900 md:flex">
+          <ul className="hidden items-center gap-2 text-sm font-medium text-neutral-900 md:flex">
             <li>
-              <a href="#about" className="transition hover:opacity-60">About</a>
+              <a
+                href="#about"
+                className="rounded-full px-4 py-2 transition-colors duration-200 hover:bg-neutral-900 hover:text-[#ffc896]"
+              >
+                About
+              </a>
             </li>
             <li>
-              <a href="#skills" className="transition hover:opacity-60">Skills</a>
+              <a
+                href="#skills"
+                className="rounded-full px-4 py-2 transition-colors duration-200 hover:bg-neutral-900 hover:text-[#ffc896]"
+              >
+                Skills
+              </a>
             </li>
             <li>
-              <a href="#projects" className="transition hover:opacity-60">Projects</a>
+              <a
+                href="#projects"
+                className="rounded-full px-4 py-2 transition-colors duration-200 hover:bg-neutral-900 hover:text-[#ffc896]"
+              >
+                Projects
+              </a>
             </li>
             <li>
-              <a href="#contact" className="transition hover:opacity-60">Contact</a>
+              <a
+                href="#contact"
+                className="rounded-full px-4 py-2 transition-colors duration-200 hover:bg-neutral-900 hover:text-[#ffc896]"
+              >
+                Contact
+              </a>
             </li>
           </ul>
           <button aria-label="Menu" className="flex flex-col gap-[6px]">
