@@ -29,7 +29,7 @@ export default function Hero() {
       </span>
 
       <div className="relative z-30 px-4 pt-4 md:px-8 md:pt-6">
-        <nav className="mx-auto flex max-w-6xl items-center justify-between rounded-full bg-amber-300 px-5 py-3 shadow-lg md:px-7 md:py-4">
+        <nav className="mx-auto flex max-w-6xl items-center justify-between rounded-full bg-[#ffc896] px-5 py-3 shadow-lg md:px-7 md:py-4">
           <div className="text-lg font-extrabold tracking-tight text-neutral-900 md:text-xl">
             ATUL HOODA<sup className="ml-0.5 text-[9px] font-medium">®</sup>
           </div>
