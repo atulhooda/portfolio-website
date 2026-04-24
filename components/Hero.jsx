@@ -2,17 +2,35 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen w-full overflow-hidden bg-[#C4451F]">
+    <section className="relative min-h-screen w-full overflow-hidden bg-[#D04A1F]">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 z-0 opacity-[0.28] mix-blend-soft-light"
+        style={{
+          backgroundImage:
+            "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='800'><filter id='c'><feTurbulence type='fractalNoise' baseFrequency='0.012' numOctaves='4' seed='7' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0'/></filter><rect width='100%' height='100%' filter='url(%23c)'/></svg>\")",
+          backgroundSize: "100% 100%",
+        }}
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 z-0 opacity-[0.14] mix-blend-soft-light"
+        style={{
+          backgroundImage:
+            "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='g'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.9 0'/></filter><rect width='100%' height='100%' filter='url(%23g)'/></svg>\")",
+        }}
+      />
+
       <span
         aria-hidden="true"
-        className="pointer-events-none absolute left-1/2 top-[14%] z-0 -translate-x-1/2 select-none whitespace-nowrap text-[32vw] font-black leading-[0.85] tracking-tighter text-black/15"
+        className="pointer-events-none absolute left-1/2 top-[14%] z-0 -translate-x-1/2 select-none whitespace-nowrap text-[32vw] font-black leading-[0.85] tracking-tighter text-white/10"
       >
         ATUL
       </span>
 
       <nav className="relative z-30 flex items-center justify-between px-6 py-6 text-white md:px-12 md:py-8">
         <div className="text-2xl font-extrabold tracking-tight">
-          ATUL<sup className="ml-0.5 text-[10px] font-medium">®</sup>
+          ATUL HOODA<sup className="ml-0.5 text-[10px] font-medium">®</sup>
         </div>
         <ul className="hidden items-center gap-20 text-xs tracking-[0.3em] md:flex">
           <li>
@@ -31,22 +49,45 @@ export default function Hero() {
         </button>
       </nav>
 
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 top-16 z-10 flex items-end justify-center">
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 top-24 z-[25] flex items-end justify-center">
         <Image
           src="/pfpp.png"
           alt="Atul"
-          width={1400}
-          height={1400}
+          width={1544}
+          height={1544}
           priority
-          className="h-[92%] w-auto object-contain object-bottom"
+          unoptimized
+          className="h-full w-auto object-contain object-bottom"
         />
       </div>
 
-      <span aria-hidden="true" className="pointer-events-none absolute left-10 top-[52%] z-20 text-white/60">✦</span>
-      <span aria-hidden="true" className="pointer-events-none absolute right-16 top-[48%] z-20 text-white/60">✦</span>
-      <span aria-hidden="true" className="pointer-events-none absolute left-[38%] top-[38%] z-20 text-xs text-white/40">✦</span>
-      <span aria-hidden="true" className="pointer-events-none absolute right-[28%] bottom-[30%] z-20 text-xs text-white/40">✦</span>
-      <span aria-hidden="true" className="pointer-events-none absolute left-[15%] bottom-[22%] z-20 text-white/50">✦</span>
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 z-20">
+        {[9.5, 36.5, 63.5, 90.5].map((y) => (
+          <div
+            key={`h-${y}`}
+            className="absolute left-0 right-0 h-px bg-white/[0.07]"
+            style={{ top: `${y}%` }}
+          />
+        ))}
+        {[6, 28, 50, 72, 94].map((x) => (
+          <div
+            key={`v-${x}`}
+            className="absolute top-0 bottom-0 w-px bg-white/[0.07]"
+            style={{ left: `${x}%` }}
+          />
+        ))}
+        {[9.5, 36.5, 63.5, 90.5].flatMap((y) =>
+          [6, 28, 50, 72, 94].map((x) => (
+            <span
+              key={`s-${x}-${y}`}
+              className="absolute -translate-x-1/2 -translate-y-1/2 text-lg text-amber-300/40 mix-blend-soft-light"
+              style={{ left: `${x}%`, top: `${y}%` }}
+            >
+              ✦
+            </span>
+          ))
+        )}
+      </div>
 
       <div className="absolute inset-x-0 bottom-0 z-20 px-6 pb-10 md:px-12 md:pb-14">
         <div className="max-w-md">
