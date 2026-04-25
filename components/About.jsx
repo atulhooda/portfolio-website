@@ -1,19 +1,21 @@
 const stats = [
   {
-    label: "Focus",
-    value: "100%",
-    description: "Trusted with shipping real product",
+    label: "Projects",
+    value: "Few",
+    description: "Shipped end-to-end across web and AI",
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
-        <path d="M3 12 L21 12 M12 3 L12 21" />
-        <circle cx="12" cy="12" r="3" />
+        <rect x="4" y="4" width="7" height="7" />
+        <rect x="13" y="4" width="7" height="7" />
+        <rect x="4" y="13" width="7" height="7" />
+        <rect x="13" y="13" width="7" height="7" />
       </svg>
     ),
   },
   {
     label: "Experience",
-    value: "4+",
-    description: "Years learning, breaking, and shipping",
+    value: "2+",
+    description: "Years building real systems",
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
         <path d="M4 17l4-4 4 4 8-8" />
@@ -22,25 +24,25 @@ const stats = [
     ),
   },
   {
-    label: "Delivered Projects",
-    value: "12+",
-    description: "Across web, systems, and tooling",
+    label: "Clients",
+    value: "5+",
+    description: "Delivered solutions across AI/ML and full-stack",
     icon: (
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
-        <path d="M12 2 L14 9 L21 12 L14 15 L12 22 L10 15 L3 12 L10 9 Z" />
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <circle cx="9" cy="8" r="3" />
+        <path d="M3 20c0-3 2.5-5 6-5s6 2 6 5" />
+        <circle cx="17" cy="9" r="2.5" />
+        <path d="M14.5 19c0-2.2 1.6-4 3.5-4s3.5 1.5 3.5 4" />
       </svg>
     ),
   },
   {
-    label: "Growth Impact",
-    value: "+40%",
-    description: "Average improvement after rebuilds",
+    label: "Hackathons",
+    value: "3+",
+    description: "Built fast, shipped under pressure",
     icon: (
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
-        <rect x="4" y="4" width="7" height="7" />
-        <rect x="13" y="4" width="7" height="7" />
-        <rect x="4" y="13" width="7" height="7" />
-        <rect x="13" y="13" width="7" height="7" />
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" aria-hidden="true">
+        <path d="M13 2 L4 14 H11 L9 22 L20 9 H13 Z" />
       </svg>
     ),
   },
@@ -76,13 +78,6 @@ export default function About() {
 
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute right-6 top-24 z-10 hidden h-12 w-12 items-center justify-center rounded-md bg-neutral-900 md:flex"
-      >
-        <span className="text-2xl text-amber-300">✦</span>
-      </div>
-
-      <div
-        aria-hidden="true"
         className="pointer-events-none absolute right-8 top-[44%] z-10 hidden flex-col gap-[3px] md:flex"
       >
         {Array.from({ length: 18 }).map((_, i) => (
@@ -97,15 +92,15 @@ export default function About() {
       <div className="relative z-10 mx-auto max-w-7xl">
         <div className="inline-flex items-center gap-3 rounded-full bg-white/60 px-4 py-2 text-[11px] font-mono font-semibold tracking-[0.25em] text-neutral-700 shadow-sm backdrop-blur-sm">
           <span className="h-2 w-2 rounded-full bg-[#D04A1F]" />
-          <span>01 &nbsp; WHY ME</span>
+          <span>01 &nbsp; ABOUT ME</span>
         </div>
 
-        <h2 className="mt-16 text-5xl font-black uppercase leading-[0.9] tracking-tighter text-neutral-900 md:mt-24 md:text-8xl lg:text-[8.5rem]">
-          Engineered
+        <h2 className="mt-16 text-3xl font-black uppercase leading-[0.95] tracking-tighter text-neutral-900 md:mt-24 md:text-5xl lg:text-6xl">
+          Fixing bugs
           <br />
-          to work.
+          I created…
           <br />
-          <span className="text-neutral-400">Built to last.</span>
+          <span className="text-neutral-400">like a responsible adult.</span>
         </h2>
 
         <div className="mt-12 flex flex-col items-end md:mt-16">
@@ -114,9 +109,17 @@ export default function About() {
             <span className="block h-px flex-1 bg-neutral-400/50" />
           </div>
           <p className="mt-5 max-w-md text-base leading-relaxed text-neutral-600 md:text-lg">
-            I&apos;m a Computer Engineering student who likes shipping working
-            systems — clean code, thoughtful design, and projects that solve
-            actual problems instead of decorating slide decks.
+            I&apos;m a <span className="font-semibold text-[#D04A1F]">Third-year Computer Engineering</span>{" "}
+             student at{" "}
+            <span className="font-semibold text-[#D04A1F]">
+              Army Institute of Technology, Pune
+            </span>
+            , focused on building real-world systems. I work across{" "}
+            <span className="font-semibold text-[#D04A1F]">AI/ML</span> and{" "}
+            <span className="font-semibold text-[#D04A1F]">full-stack</span>{" "}
+            development, and I&apos;m currently running a{" "}
+            <span className="font-semibold text-[#D04A1F]">startup</span>{" "}
+            where I create practical solutions for clients in both domains.
           </p>
         </div>
 
