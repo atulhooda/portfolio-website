@@ -12,6 +12,7 @@ const thoughts = [
 
 const navLinks = [
   { href: "#about", label: "About" },
+  { href: "#experience", label: "Experience" },
   { href: "#skills", label: "Skills" },
   { href: "#projects", label: "Projects" },
   { href: "#contact", label: "Contact" },
@@ -43,7 +44,7 @@ export default function Hero() {
   }, [menuOpen]);
 
   return (
-    <section className="relative min-h-screen w-full overflow-hidden bg-[#D04A1F]">
+    <section id="hero" className="relative min-h-screen w-full overflow-hidden bg-[#D04A1F]">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 z-0 opacity-[0.28] mix-blend-soft-light"
@@ -170,13 +171,13 @@ export default function Hero() {
         )}
       </div>
 
-      <div className="absolute inset-x-0 bottom-0 z-20 flex items-end justify-between gap-6 px-6 pb-10 md:px-12 md:pb-14">
+      <div className="absolute inset-x-0 bottom-0 z-[28] flex flex-col items-start gap-8 px-6 pb-8 md:flex-row md:items-end md:justify-between md:gap-6 md:px-12 md:pb-14">
         <div className="max-w-md">
           <div>
-            <p className="text-3xl font-extrabold leading-tight tracking-tight text-[#efece7] md:text-4xl">
+            <p className="text-2xl font-extrabold leading-tight tracking-tight text-[#efece7] sm:text-3xl md:text-4xl">
               Computer Engineering Student.
             </p>
-            <p className="mt-2 text-base font-light leading-relaxed text-[#efece7]/65 md:text-lg">
+            <p className="mt-2 text-sm font-light leading-relaxed text-[#efece7]/65 sm:text-base md:text-lg">
               Building systems that solve real problems.
             </p>
           </div>
@@ -184,7 +185,7 @@ export default function Hero() {
             href="https://wa.me/917017886366?text=Hey%20Atul%2C%20saw%20your%20portfolio%20%E2%80%94%20"
             target="_blank"
             rel="noreferrer"
-            className="group mt-10 inline-flex items-center gap-5 rounded-full bg-neutral-900 py-2 pl-7 pr-2 text-[#efece7] transition hover:bg-neutral-800"
+            className="group mt-6 inline-flex items-center gap-5 rounded-full bg-neutral-900 py-2 pl-7 pr-2 text-[#efece7] transition hover:bg-neutral-800 md:mt-10"
           >
             <span className="text-xs tracking-[0.3em]">CONTACT ME</span>
             <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#efece7] text-neutral-900 transition group-hover:bg-[#e0ddd6]">
@@ -195,14 +196,14 @@ export default function Hero() {
           </a>
         </div>
 
-        <div className="flex flex-col items-end gap-3">
+        <div className="flex flex-col items-start gap-3 md:items-end">
           <div className="flex items-center gap-3 text-[#efece7]/70">
-            <span aria-hidden="true" className="block h-px w-12 bg-current" />
-            <span className="text-sm font-bold uppercase tracking-[0.4em] md:text-base">
+            <span aria-hidden="true" className="block h-px w-8 bg-current md:w-12" />
+            <span className="text-xs font-bold uppercase tracking-[0.35em] sm:text-sm md:text-base md:tracking-[0.4em]">
               Connect
             </span>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2">
             <a
               href="https://github.com/atulhooda"
               target="_blank"
