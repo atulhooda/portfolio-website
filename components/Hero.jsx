@@ -65,7 +65,7 @@ export default function Hero() {
 
       <span
         aria-hidden="true"
-        className="pointer-events-none absolute left-1/2 top-[14%] z-0 -translate-x-1/2 select-none whitespace-nowrap text-[32vw] font-black leading-[0.85] tracking-tighter text-[#efece7]/10"
+        className="pointer-events-none absolute left-1/2 top-[58%] z-0 -translate-x-1/2 select-none whitespace-nowrap text-[32vw] font-black leading-[0.85] tracking-tighter text-[#efece7]/10 md:top-[14%]"
       >
         ATUL
       </span>
@@ -112,7 +112,7 @@ export default function Hero() {
         </nav>
       </div>
 
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 top-24 z-[25] flex items-end justify-center">
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 top-[55%] z-[25] flex items-end justify-center md:top-24">
         <div className="group pointer-events-auto relative h-full">
           <Image
             src="/pfpp.png"
@@ -121,7 +121,7 @@ export default function Hero() {
             height={1544}
             priority
             unoptimized
-            className="h-full w-auto object-contain object-bottom"
+            className="h-full w-auto max-w-full object-contain object-bottom md:max-w-none"
           />
           <div className="pointer-events-none absolute left-[80%] top-[12%] z-30 origin-bottom-left scale-90 opacity-0 transition-all duration-300 group-hover:scale-100 group-hover:opacity-100">
             <div className="relative whitespace-nowrap rounded-[2rem] bg-[#efece7] px-8 py-5 text-base font-bold text-neutral-900 shadow-2xl md:text-lg">
@@ -171,7 +171,7 @@ export default function Hero() {
         )}
       </div>
 
-      <div className="absolute inset-x-0 bottom-0 z-[28] flex flex-col items-start gap-8 px-6 pb-8 md:flex-row md:items-end md:justify-between md:gap-6 md:px-12 md:pb-14">
+      <div className="absolute inset-x-0 top-28 z-[28] flex flex-col items-start gap-6 px-6 md:bottom-0 md:top-auto md:flex-row md:items-end md:justify-between md:gap-6 md:px-12 md:pb-14">
         <div className="max-w-md">
           <div>
             <p className="text-2xl font-extrabold leading-tight tracking-tight text-[#efece7] sm:text-3xl md:text-4xl">
