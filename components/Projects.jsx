@@ -2,6 +2,15 @@ const githubUrl = "https://github.com/atulhooda";
 
 const projects = [
   {
+    name: "Engage O Agency",
+    description:
+      "Official site for Engage O Agency — my own studio shipping AI/ML and full-stack builds for clients. Service breakdown, case studies, and a clean inquiry flow.",
+    tags: ["Next.js", "Tailwind", "Branding", "Web Design"],
+    liveLink: "https://www.engageoagency.com/",
+    repoLink: null,
+    period: "2025",
+  },
+  {
     name: "Innerve — AIT Pune's Flagship Hackathon",
     description:
       "Official site for Innerve, the annual hackathon at Army Institute of Technology, Pune — event story, schedule, sponsors, and registration flow on a fast, animated frontend.",
