@@ -170,16 +170,16 @@ export default function Contact() {
           </div>
         </div>
 
-        <div className="relative mt-32 h-[34vw] md:mt-40 md:h-[26vw]">
+        <div className="relative mt-24 h-[22vw] md:mt-40 md:h-[26vw]">
           <span
             aria-hidden="true"
-            className="pointer-events-none absolute inset-x-0 -bottom-[18%] block select-none text-center text-[44vw] font-black leading-[0.8] tracking-tighter text-[#efece7]/[0.06] md:text-[36vw]"
+            className="pointer-events-none absolute inset-x-0 -bottom-[14%] block select-none text-center text-[28vw] font-black leading-[0.8] tracking-tighter text-[#efece7]/[0.06] md:text-[36vw] md:-bottom-[18%]"
           >
             ATUL
           </span>
         </div>
 
-        <div className="relative flex flex-col gap-4 border-t border-[#efece7]/10 py-8 text-xs text-[#efece7]/50 md:flex-row md:items-center md:justify-between md:text-sm">
+        <div className="relative flex flex-col gap-4 border-t border-[#efece7]/10 pb-16 pt-8 text-xs text-[#efece7]/50 md:flex-row md:items-center md:justify-between md:pb-8 md:text-sm">
           <div>
             © {new Date().getFullYear()} ATUL HOODA<sup>®</sup> &nbsp;|&nbsp; All Rights Reserved
           </div>
