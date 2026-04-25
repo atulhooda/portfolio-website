@@ -2,9 +2,9 @@ const githubUrl = "https://github.com/atulhooda";
 
 const projects = [
   {
-    name: "Engage O Agency",
+    name: "Engageo Agency",
     description:
-      "Official site for Engage O Agency — my own studio shipping AI/ML and full-stack builds for clients. Service breakdown, case studies, and a clean inquiry flow.",
+      "Official site for Engageo Agency — my own studio shipping AI/ML and full-stack builds for clients. Service breakdown, case studies, and a clean inquiry flow.",
     tags: ["Next.js", "Tailwind", "Branding", "Web Design"],
     liveLink: "https://www.engageoagency.com/",
     repoLink: null,
