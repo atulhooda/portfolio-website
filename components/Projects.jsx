@@ -2,6 +2,15 @@ const githubUrl = "https://github.com/atulhooda";
 
 const projects = [
   {
+    name: "Innerve — AIT Pune's Flagship Hackathon",
+    description:
+      "Official site for Innerve, the annual hackathon at Army Institute of Technology, Pune — event story, schedule, sponsors, and registration flow on a fast, animated frontend.",
+    tags: ["Next.js", "Tailwind", "Web Design", "Frontend"],
+    liveLink: "https://www.innerve.tech/",
+    repoLink: null,
+    period: "2025",
+  },
+  {
     name: "Researcher Agent",
     description:
       "Autonomous research agent that browses the web, calls tools, and synthesizes structured findings on any topic — multi-step planning with self-correction.",
