@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Atul Hooda — Computer Engineer & Builder",
+  title: "Atul Hooda - Portfolio Website",
   description:
     "Portfolio of Atul Hooda — third-year Computer Engineering student at AIT Pune building AI/ML and full-stack products.",
 };
