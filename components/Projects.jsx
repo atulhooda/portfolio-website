@@ -11,6 +11,15 @@ const projects = [
     period: "2025",
   },
   {
+    name: "AIT MUN — Model United Nations",
+    description:
+      "Official site for AIT Model United Nations — committee details, agendas, registration, and a polished delegate experience built around the conference brand.",
+    tags: ["Next.js", "Tailwind", "Web Design", "Frontend"],
+    liveLink: "https://www.aitmun.in/",
+    repoLink: null,
+    period: "2025",
+  },
+  {
     name: "Researcher Agent",
     description:
       "Autonomous research agent that browses the web, calls tools, and synthesizes structured findings on any topic — multi-step planning with self-correction.",
