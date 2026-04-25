@@ -24,3 +24,46 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes menu-overlay-in {
+  0% {
+    clip-path: circle(0% at calc(100% - 2.75rem) 2.75rem);
+  }
+  100% {
+    clip-path: circle(150% at calc(100% - 2.75rem) 2.75rem);
+  }
+}
+
+@keyframes menu-link-in {
+  0% {
+    opacity: 0;
+    transform: translateY(70%) skewY(6deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) skewY(0);
+  }
+}
+
+@keyframes menu-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-menu-overlay {
+  animation: menu-overlay-in 650ms cubic-bezier(0.77, 0, 0.18, 1) both;
+}
+
+.animate-menu-link {
+  animation: menu-link-in 750ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.animate-menu-fade {
+  animation: menu-fade-in 500ms ease-out both;
+}
