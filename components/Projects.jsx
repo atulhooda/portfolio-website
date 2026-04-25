@@ -11,7 +11,7 @@ const projects = [
     period: "2025",
   },
   {
-    name: "Innerve — AIT Pune's Flagship Hackathon",
+    name: "Innerve X website",
     description:
       "Official site for Innerve, the annual hackathon at Army Institute of Technology, Pune — event story, schedule, sponsors, and registration flow on a fast, animated frontend.",
     tags: ["Next.js", "Tailwind", "Web Design", "Frontend"],
