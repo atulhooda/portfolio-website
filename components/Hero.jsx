@@ -45,6 +45,9 @@ export default function Hero() {
 
   return (
     <section id="hero" className="relative min-h-screen w-full overflow-hidden bg-[#D04A1F]">
+      <h1 className="sr-only">
+        Atul Hooda — Computer Engineering student at Army Institute of Technology, Pune. Full-stack and AI/ML developer, founder of Engageo Agency.
+      </h1>
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 z-0 opacity-[0.28] mix-blend-soft-light"
@@ -116,7 +119,7 @@ export default function Hero() {
         <div className="group pointer-events-auto relative h-full">
           <Image
             src="/pfpp.png"
-            alt="Atul"
+            alt="Atul Hooda"
             width={1544}
             height={1544}
             priority
