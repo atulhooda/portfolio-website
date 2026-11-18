@@ -1,19 +1,47 @@
 const skillGroups = [
   {
-    title: "Machine Learning & AI",
+    title: "Machine Learning",
     description: "Practical models that ship in real products.",
     items: [
       "Scikit-learn",
-      "PyTorch / TensorFlow",
-      "Model Training",
-      "Feature Engineering",
-      "Model Evaluation",
+      "NumPy / Pandas",
+      "Matplotlib",
       "Data Preprocessing",
+      "Feature Engineering",
+      "Model Training",
+      "Model Evaluation",
+      "Hyperparameter Tuning",
+      "Gradient Boosting (LightGBM)",
     ],
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <circle cx="12" cy="12" r="3" />
         <path d="M12 4v3M12 17v3M4 12h3M17 12h3M6.3 6.3l2.1 2.1M15.6 15.6l2.1 2.1M6.3 17.7l2.1-2.1M15.6 8.4l2.1-2.1" />
+      </svg>
+    ),
+  },
+  {
+    title: "Deep Learning",
+    description: "Neural networks, from first layer to trained model.",
+    items: [
+      "TensorFlow / Keras",
+      "PyTorch",
+      "ANN",
+      "CNN",
+      "RNN / LSTM",
+      "Transformers",
+      "NLP",
+      "Computer Vision",
+    ],
+    icon: (
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <circle cx="5" cy="7" r="1.8" />
+        <circle cx="5" cy="17" r="1.8" />
+        <circle cx="12" cy="5" r="1.8" />
+        <circle cx="12" cy="12" r="1.8" />
+        <circle cx="12" cy="19" r="1.8" />
+        <circle cx="19" cy="12" r="1.8" />
+        <path d="M6.8 7l3.4-1.5M6.8 7.6l3.6 3.6M6.8 16.4l3.6-3.6M6.8 17l3.4 1.5M13.8 5.6l3.8 5.2M13.8 12h3.4M13.8 18.4l3.8-5.2" />
       </svg>
     ),
   },
@@ -24,7 +52,13 @@ const skillGroups = [
       "LLM Applications",
       "Prompt Engineering",
       "RAG (Retrieval-Augmented Generation)",
-      "OpenAI / HuggingFace APIs",
+      "Embeddings",
+      "Vector Databases (ChromaDB)",
+      "OpenAI / Gemini / Claude APIs",
+      "HuggingFace",
+      "Structured Outputs",
+      "LLM Evaluation",
+      "Speech-to-Text",
     ],
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -36,7 +70,15 @@ const skillGroups = [
   {
     title: "Agentic AI",
     description: "Autonomous workflows that take real action.",
-    items: ["AI Agents", "LangChain", "Tool Calling", "Workflow Automation"],
+    items: [
+      "AI Agents",
+      "LangChain",
+      "LangGraph",
+      "Tool Calling",
+      "Multi-step Planning",
+      "Guardrails",
+      "Workflow Automation",
+    ],
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <circle cx="5" cy="6" r="2" />
@@ -47,9 +89,28 @@ const skillGroups = [
     ),
   },
   {
+    title: "MLOps",
+    description: "Getting models out of notebooks and keeping them running.",
+    items: [
+      "Docker",
+      "CI/CD (GitHub Actions)",
+      "Model Serving (FastAPI)",
+      "Experiment Tracking",
+      "Model & Data Versioning",
+      "ML Pipelines",
+      "Monitoring",
+      "Cloud Deployment",
+    ],
+    icon: (
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="M7 12c0-2 1.3-3.5 3-3.5 2.5 0 3.5 7 6 7 1.7 0 3-1.5 3-3.5s-1.3-3.5-3-3.5c-2.500 0-3.5 7-6 7-1.7 0-3-1.5-3-3.5z" />
+      </svg>
+    ),
+  },
+  {
     title: "Programming Languages",
     description: "The grammar I think and ship in.",
-    items: ["JavaScript", "TypeScript", "Python", "C++"],
+    items: ["JavaScript", "TypeScript", "Python", "C++", "SQL", "Solidity"],
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M9 7l-5 5 5 5M15 7l5 5-5 5" />
@@ -64,9 +125,10 @@ const skillGroups = [
       "PostgreSQL",
       "NeonDB",
       "Prisma",
+      "Redis",
       "AWS",
       "Docker",
-      "Deployment (Vercel / EC2)",
+      "Deployment (Vercel / Railway / EC2)",
     ],
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">

@@ -2,6 +2,87 @@ const githubUrl = "https://github.com/atulhooda";
 
 const projects = [
   {
+    name: "Oryn — Pocket Money for AI Agents",
+    description:
+      "Gives an AI agent a smart-contract wallet on Monad where the spending rules live on-chain — allowlist, daily cap, owner approval, one-tap revoke. You can jailbreak the agent, but the money still doesn't move. Built at Monad Blitz Pune V3.",
+    tags: ["Solidity", "Monad", "Gemini", "AI Agents", "Next.js"],
+    liveLink: "https://oryn-pocket-money-for-ai-agent.vercel.app",
+    repoLink: "https://github.com/atulhooda/oryn-pocket-money-for-ai-agent",
+    period: "2026",
+  },
+  {
+    name: "Sangam",
+    description:
+      "Settlement rail for the agent economy. An AI agent pays an Indian merchant's API over x402 in USDC on Hedera; Sangam verifies it on-chain, pays the merchant in INR over UPI, and writes a hash-chained receipt to an HCS topic.",
+    tags: ["Hedera", "x402", "0G Compute", "ENS", "Next.js", "TypeScript"],
+    liveLink: null,
+    repoLink: "https://github.com/atulhooda/sangam",
+    period: "2026",
+  },
+  {
+    name: "Hisaab — AI Financial Health Copilot",
+    description:
+      "Hackathon backend that turns bank and SMS transactions into a financial health score, cash-flow forecast, and bounce-risk predictions — with a tool-calling copilot that answers money questions in Hinglish, PII-masked and validated.",
+    tags: ["FastAPI", "LightGBM", "Scikit-learn", "LLM Tool Calling", "PostgreSQL", "Redis"],
+    liveLink: null,
+    repoLink: "https://github.com/atulhooda/financial-health-copilot",
+    period: "2026",
+  },
+  {
+    name: "Ritu OncoReady",
+    description:
+      "Consultation readiness for cancer follow-ups. Ritu takes the patient's history by voice in their language and reads uploaded reports, then briefs the doctor on what changed, what's pending, and what's missing — every line with its source.",
+    tags: ["FastAPI", "Next.js", "OCR", "Gemini", "Celery", "Docker"],
+    liveLink: null,
+    repoLink: "https://github.com/atulhooda/ritu-oncoready",
+    period: "2026",
+  },
+  {
+    name: "Competitor Analysis Agent",
+    description:
+      "Autonomous competitor-intelligence agent: monitors rival sites, versions every change, scores content opportunities, then researches, fact-checks, and publishes original articles as pull requests — on a schedule, within daily limits.",
+    tags: ["Python", "Gemini", "FastAPI", "PostgreSQL", "Agents", "CI/CD"],
+    liveLink: null,
+    repoLink: "https://github.com/atulhooda/competitor-analysis-agent",
+    period: "2026",
+  },
+  {
+    name: "Behavioral Funnel Agent",
+    description:
+      "Decision brain for a marketing funnel. Tracks real visitor behaviour, scores leads in two stages (deterministic rules, then Gemini), and picks the next message behind guardrails — all business logic lives in config, not prompts.",
+    tags: ["Python", "FastAPI", "Gemini", "PostgreSQL", "Docker"],
+    liveLink: null,
+    repoLink: "https://github.com/atulhooda/funnel-agent",
+    period: "2026",
+  },
+  {
+    name: "Clinic Pharmacy Tool",
+    description:
+      "Multi-tenant pharmacy and stock app for clinics — medicine master, dispensary ledger, roles, signing PINs, and an audit log, on Postgres row-level security that fails safe when the schema can't be verified.",
+    tags: ["Next.js", "TypeScript", "PostgreSQL", "RLS", "Multi-tenant"],
+    liveLink: null,
+    repoLink: "https://github.com/atulhooda/clinic-pharmacy-tool",
+    period: "2026",
+  },
+  {
+    name: "Engageo Scribe",
+    description:
+      "AI medical scribe: record a patient encounter, transcribe Hindi / English speech with Sarvam AI, and generate a structured clinical note with Gemini — speaker labels, suggested medical codes, and encrypted local storage.",
+    tags: ["Next.js", "TypeScript", "Gemini", "Speech-to-Text", "Monorepo"],
+    liveLink: null,
+    repoLink: "https://github.com/atulhooda/medicalscribe2.0",
+    period: "2026",
+  },
+  {
+    name: "AI Disaster Response Commander",
+    description:
+      "Intelligent agent that commands ambulances and rescue teams across a simulated disaster zone — A* routing, CSP resource allocation, HTN planning, and live replanning. Every algorithm written from scratch in Python.",
+    tags: ["Python", "A* Search", "CSP", "Planning", "Classical AI"],
+    liveLink: "https://aiminiproject-beta.vercel.app",
+    repoLink: "https://github.com/atulhooda/aiminiproject",
+    period: "2026",
+  },
+  {
     name: "Engageo Agency",
     description:
       "Official site for Engageo Agency — my own studio shipping AI/ML and full-stack builds for clients. Service breakdown, case studies, and a clean inquiry flow.",
@@ -9,6 +90,33 @@ const projects = [
     liveLink: "https://www.engageoagency.com/",
     repoLink: null,
     period: "2025",
+  },
+  {
+    name: "Skin Essence",
+    description:
+      "Website redesign for Skin Essence, an MD dermatology clinic in Pune. Every page — treatments, concerns, technology, blog — is generated from typed, schema-validated content, with full medical SEO and JSON-LD.",
+    tags: ["Next.js", "TypeScript", "MDX", "Zod", "SEO"],
+    liveLink: "https://skinessencewebsiteredesign.vercel.app",
+    repoLink: "https://github.com/atulhooda/skinessencewebsiteredesign",
+    period: "2026",
+  },
+  {
+    name: "NeuroNest",
+    description:
+      "Website for NeuroNest Pediatric Rehabilitation Centre, Pune — a fast static site with 15 generated therapy pages, clean URLs, and a sitemap wired into Search Console.",
+    tags: ["HTML", "CSS", "JavaScript", "SEO", "Client Work"],
+    liveLink: "https://www.neuronestprc.com/",
+    repoLink: "https://github.com/atulhooda/neuronest-website",
+    period: "2026",
+  },
+  {
+    name: "4Edge",
+    description:
+      "Website for 4Edge, premium PVC edge banding by Prime Edge Polycraft LLP, Pune — product and size-code catalogue, a shade library, and a quote-request flow.",
+    tags: ["HTML", "CSS", "JavaScript", "Client Work"],
+    liveLink: "https://4edge-website.vercel.app",
+    repoLink: "https://github.com/atulhooda/4edge-website",
+    period: "2026",
   },
   {
     name: "Innerve X website",
@@ -29,40 +137,13 @@ const projects = [
     period: "2025",
   },
   {
-    name: "Researcher Agent",
+    name: "engageo-orbs",
     description:
-      "Autonomous research agent that browses the web, calls tools, and synthesizes structured findings on any topic — multi-step planning with self-correction.",
-    tags: ["Agents", "LangChain", "Tool Calling", "Python"],
-    liveLink: null,
-    repoLink: null,
-    period: "2025",
-  },
-  {
-    name: "Brand Voice Studio",
-    description:
-      "Generative AI workspace that learns a brand's tone from sample content and produces on-brand copy across blogs, social, and ad channels.",
-    tags: ["LLMs", "Prompt Engineering", "OpenAI", "Next.js"],
-    liveLink: null,
-    repoLink: null,
-    period: "2025",
-  },
-  {
-    name: "RAG Knowledge Assistant",
-    description:
-      "Retrieval-augmented chatbot that answers from custom document sets — embeddings, vector search, and an LLM pipeline behind a clean UI.",
-    tags: ["Python", "LangChain", "RAG", "Vector DB"],
-    liveLink: null,
-    repoLink: null,
-    period: "2025",
-  },
-  {
-    name: "Agentic Workflow Lab",
-    description:
-      "Experiments in autonomous AI agents — tool calling, multi-step planning, and workflow automation for repeatable real-world tasks.",
-    tags: ["Agents", "LangChain", "Python", "Automation"],
-    liveLink: null,
-    repoLink: null,
-    period: "2024 — 2025",
+      "Branded \"AI vs human\" conversation reel visuals — two identity orbs with a radial voice spectrum and word-synced captions, as a live browser recorder and a deterministic offline MP4 renderer.",
+    tags: ["JavaScript", "Canvas", "ffmpeg", "Whisper"],
+    liveLink: "https://engageo-orbs.vercel.app",
+    repoLink: "https://github.com/atulhooda/engageo-orbs",
+    period: "2026",
   },
 ];
 
@@ -162,7 +243,7 @@ export default function Projects() {
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3 font-mono text-[10px] font-semibold uppercase tracking-[0.25em] text-[#efece7]/60">
                   <span className="h-2.5 w-2.5 bg-[#D04A1F]" />
-                  <span>0{i + 1} &nbsp; {project.period}</span>
+                  <span>{String(i + 1).padStart(2, "0")} &nbsp; {project.period}</span>
                 </div>
                 <span className="text-[#efece7]/30 transition-colors group-hover:text-[#D04A1F]">
                   <ArrowIcon />
@@ -202,9 +283,11 @@ export default function Projects() {
                       <ArrowIcon />
                     </a>
                   ) : (
-                    <span className="inline-flex items-center gap-2 rounded-full border border-[#efece7]/15 px-4 py-2 font-medium text-[#efece7]/40">
-                      Coming soon
-                    </span>
+                    !project.repoLink && (
+                      <span className="inline-flex items-center gap-2 rounded-full border border-[#efece7]/15 px-4 py-2 font-medium text-[#efece7]/40">
+                        Coming soon
+                      </span>
+                    )
                   )}
                   {project.repoLink && (
                     <a

@@ -115,6 +115,10 @@ const personJsonLd = {
   knowsAbout: [
     "Artificial Intelligence",
     "Machine Learning",
+    "Deep Learning",
+    "Generative AI",
+    "AI Agents",
+    "MLOps",
     "Full-Stack Development",
     "Next.js",
     "React",
